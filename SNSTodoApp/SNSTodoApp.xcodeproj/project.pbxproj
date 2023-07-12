@@ -13,9 +13,11 @@
 		28BBB1362A5E8E2A003183B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BBB1342A5E8E2A003183B7 /* Main.storyboard */; };
 		28BBB1382A5E8E2C003183B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28BBB1372A5E8E2C003183B7 /* Assets.xcassets */; };
 		28BBB13B2A5E8E2C003183B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BBB1392A5E8E2C003183B7 /* LaunchScreen.storyboard */; };
+		8C2223C5D3C2E9A2BB294FDE /* Pods_SNSTodoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E970818441431855DA0E74F /* Pods_SNSTodoApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A4FEB1D644B6C503D879CE7 /* Pods-SNSTodoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNSTodoApp.debug.xcconfig"; path = "Target Support Files/Pods-SNSTodoApp/Pods-SNSTodoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		28BBB12B2A5E8E2A003183B7 /* SNSTodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNSTodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28BBB12E2A5E8E2A003183B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28BBB1302A5E8E2A003183B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		28BBB1372A5E8E2C003183B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28BBB13A2A5E8E2C003183B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28BBB13C2A5E8E2C003183B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8069DF0697458A4D38EF3FF4 /* Pods-SNSTodoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNSTodoApp.release.xcconfig"; path = "Target Support Files/Pods-SNSTodoApp/Pods-SNSTodoApp.release.xcconfig"; sourceTree = "<group>"; };
+		8E970818441431855DA0E74F /* Pods_SNSTodoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNSTodoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C2223C5D3C2E9A2BB294FDE /* Pods_SNSTodoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18C1789C45814F1D4E070FE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A4FEB1D644B6C503D879CE7 /* Pods-SNSTodoApp.debug.xcconfig */,
+				8069DF0697458A4D38EF3FF4 /* Pods-SNSTodoApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		28BBB1222A5E8E2A003183B7 = {
 			isa = PBXGroup;
 			children = (
 				28BBB12D2A5E8E2A003183B7 /* SNSTodoApp */,
 				28BBB12C2A5E8E2A003183B7 /* Products */,
+				18C1789C45814F1D4E070FE3 /* Pods */,
+				38127F083D41828984BE837F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = SNSTodoApp;
 			sourceTree = "<group>";
 		};
+		38127F083D41828984BE837F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E970818441431855DA0E74F /* Pods_SNSTodoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28BBB13F2A5E8E2C003183B7 /* Build configuration list for PBXNativeTarget "SNSTodoApp" */;
 			buildPhases = (
+				5B5EDEAFB58834D9C10D3725 /* [CP] Check Pods Manifest.lock */,
 				28BBB1272A5E8E2A003183B7 /* Sources */,
 				28BBB1282A5E8E2A003183B7 /* Frameworks */,
 				28BBB1292A5E8E2A003183B7 /* Resources */,
+				D79A875BEC141EE81355FDC3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B5EDEAFB58834D9C10D3725 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SNSTodoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D79A875BEC141EE81355FDC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SNSTodoApp/Pods-SNSTodoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SNSTodoApp/Pods-SNSTodoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SNSTodoApp/Pods-SNSTodoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		28BBB1272A5E8E2A003183B7 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		28BBB1402A5E8E2C003183B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A4FEB1D644B6C503D879CE7 /* Pods-SNSTodoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		28BBB1412A5E8E2C003183B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8069DF0697458A4D38EF3FF4 /* Pods-SNSTodoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
