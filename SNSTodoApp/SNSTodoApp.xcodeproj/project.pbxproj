@@ -10,7 +10,6 @@
 		28BBB12F2A5E8E2A003183B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBB12E2A5E8E2A003183B7 /* AppDelegate.swift */; };
 		28BBB1312A5E8E2A003183B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBB1302A5E8E2A003183B7 /* SceneDelegate.swift */; };
 		28BBB1332A5E8E2A003183B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BBB1322A5E8E2A003183B7 /* ViewController.swift */; };
-		28BBB1362A5E8E2A003183B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BBB1342A5E8E2A003183B7 /* Main.storyboard */; };
 		28BBB1382A5E8E2C003183B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28BBB1372A5E8E2C003183B7 /* Assets.xcassets */; };
 		28BBB13B2A5E8E2C003183B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BBB1392A5E8E2C003183B7 /* LaunchScreen.storyboard */; };
 		8C2223C5D3C2E9A2BB294FDE /* Pods_SNSTodoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E970818441431855DA0E74F /* Pods_SNSTodoApp.framework */; };
@@ -22,7 +21,6 @@
 		28BBB12E2A5E8E2A003183B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28BBB1302A5E8E2A003183B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		28BBB1322A5E8E2A003183B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		28BBB1352A5E8E2A003183B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28BBB1372A5E8E2C003183B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28BBB13A2A5E8E2C003183B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28BBB13C2A5E8E2C003183B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,7 +46,6 @@
 				1A4FEB1D644B6C503D879CE7 /* Pods-SNSTodoApp.debug.xcconfig */,
 				8069DF0697458A4D38EF3FF4 /* Pods-SNSTodoApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -76,7 +73,6 @@
 				28BBB12E2A5E8E2A003183B7 /* AppDelegate.swift */,
 				28BBB1302A5E8E2A003183B7 /* SceneDelegate.swift */,
 				28BBB1322A5E8E2A003183B7 /* ViewController.swift */,
-				28BBB1342A5E8E2A003183B7 /* Main.storyboard */,
 				28BBB1372A5E8E2C003183B7 /* Assets.xcassets */,
 				28BBB1392A5E8E2C003183B7 /* LaunchScreen.storyboard */,
 				28BBB13C2A5E8E2C003183B7 /* Info.plist */,
@@ -154,7 +150,6 @@
 			files = (
 				28BBB13B2A5E8E2C003183B7 /* LaunchScreen.storyboard in Resources */,
 				28BBB1382A5E8E2C003183B7 /* Assets.xcassets in Resources */,
-				28BBB1362A5E8E2A003183B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,14 +211,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		28BBB1342A5E8E2A003183B7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28BBB1352A5E8E2A003183B7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		28BBB1392A5E8E2C003183B7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -362,7 +349,6 @@
 				INFOPLIST_FILE = SNSTodoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -391,7 +377,6 @@
 				INFOPLIST_FILE = SNSTodoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
